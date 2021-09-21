@@ -12,9 +12,17 @@ const App = () => {
 	}, [count, setCount]);
 
 	return (
-		<div className='main'>
-			<div className='counter'>{count}</div>
-			<div>Snowpack + React</div>
+		<div className='min-h-screen flex flex-col items-center justify-center'>
+			<div className='text-gray-800 font-bold text-2xl'>{count}</div>
+			<div className='text-gray-500 font-medium text-xl'>
+				Snowpack + React + Tailwind <span>💚</span>
+			</div>
+			<a
+				href='https:github.com/ashirbad29'
+				className='absolute bottom-6 text-indigo-500 font-medium hover:underline'
+			>
+				@ashirbad29
+			</a>
 		</div>
 	);
 };
